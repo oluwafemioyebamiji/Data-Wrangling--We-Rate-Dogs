@@ -13158,20 +13158,20 @@ The focus of this project is to demonstrate enough knowledge of data wrangling, 
 </li>
 </ul>
 <ol>
-<li><p>Some columns have wrong datatypes:timestamp: object instead of datetime and IDs (tweet_id    in_reply_to_status_id   in_reply_to_user_id) should be object data type.</p>
+<li><p>Some tweets are retweets and needs to be removed</p>
 </li>
-<li><p>The link and the content in source column are embedded with an html <a></a> tag</p>
+<li><p>Some columns have wrong datatypes:</p>
+<ul>
+<li>timestamp: object instead of datetime</li>
+<li>IDs (tweet_id   in_reply_to_status_id   in_reply_to_user_id) should be object data type.</li>
+</ul>
 </li>
+</ol>
+<ol>
+<li>The link and the content in source column are embedded with an html <a></a> tag</li>
 </ol>
 <ol>
 <li>In Image Prediction datasets, the algorithm used in Prediction 1 (p1) has the best confidence (59%) compared to the next best algorithm (15%), we should drop other prediction columns to keep only the best prediction (p1, p1_conf and p1 dog).</li>
-</ol>
-<ol>
-<li>There are lots of rows in the expanded url column having two values for a single row e.g. row 6, 7, etc. <ul>
-<li>row 6: <a href="https://gofundme.com/ydvmve-surgery-for-jax,https://twitter.com/dog_rates/status/890971913173991426/photo/1">https://gofundme.com/ydvmve-surgery-for-jax,https://twitter.com/dog_rates/status/890971913173991426/photo/1</a>         </li>
-<li>row 7: <a href="https://twitter.com/dog_rates/status/890729181411237888/photo/1,https://twitter.com/dog_rates/status/890729181411237888/photo/1">https://twitter.com/dog_rates/status/890729181411237888/photo/1,https://twitter.com/dog_rates/status/890729181411237888/photo/1</a></li>
-</ul>
-</li>
 </ol>
 <ol>
 <li>p1 dog breed column has an high tendency for differences in the capitalisation of the texts resulting in duplicates. All names should be in a similar case such as lower case</li>
@@ -13193,19 +13193,6 @@ The focus of this project is to demonstrate enough knowledge of data wrangling, 
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
